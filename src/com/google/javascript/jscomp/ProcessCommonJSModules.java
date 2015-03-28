@@ -49,11 +49,11 @@ public class ProcessCommonJSModules implements CompilerPass {
   private final ES6ModuleLoader loader;
   private final boolean reportDependencies;
 
-  ProcessCommonJSModules(Compiler compiler, ES6ModuleLoader loader) {
+  public ProcessCommonJSModules(Compiler compiler, ES6ModuleLoader loader) {
     this(compiler, loader, true);
   }
 
-  ProcessCommonJSModules(Compiler compiler, ES6ModuleLoader loader,
+  public ProcessCommonJSModules(Compiler compiler, ES6ModuleLoader loader,
       boolean reportDependencies) {
     this.compiler = compiler;
     this.loader = loader;
